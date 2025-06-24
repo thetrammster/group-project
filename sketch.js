@@ -13,6 +13,8 @@ let rock =[];
 let rockYPos = 2;
 let bg;
 
+let centered;
+
 // Load assets
 function preload(){
     player = loadImage("images/NewCart.png");
@@ -24,9 +26,20 @@ function preload(){
 
 }
 
+function centerCanvas(){
+    //sets the variables that get the midpoint of the page and set it to the coordinates of the canvas
+    var x = (windowWidth - width) / 2;
+    var y = (windowHeight - height) / 2;
+    centered.position(x,y);
+}
+
 function setup() {
-    createCanvas(600, 600);
-    
+//Assigns the creation of the cavas to a variable that can be used later for positioning
+centered = createCanvas(850,775);
+//positions the canvas in the center
+centerCanvas();
+
+
 
 }
 
