@@ -1,29 +1,17 @@
 let movingRight = false;
 let movingLeft = false;
-let movingUp = false;
-let movingDown = false;
 
 let xpos = 350;
 let ypos = 770;
 let speed = 5;
 
-
 let player;
-let rock =[];
-let rockYPos = 2;
 let bg;
-
-
 
 // Load assets
 function preload(){
     player = loadImage("images/NewCart.png");
-    rock[0] = loadImage("images/Rock1.png");
-    //rocks[1] = loadImage("image/Rock2");
-    //rocks[2] = loadImage("image/Rock3");
-    //rocks[3] = loadImage("image/Rock4");
     bg = loadImage("images/Background.png"); 
-
 }
 
 function centerCanvas(){
@@ -33,11 +21,8 @@ function centerCanvas(){
     centered.position(x,y);
 }
 function setup() {
-    
     centered = createCanvas(800, 1000);
     centerCanvas();
-    
-
 }
 
 function draw() {
@@ -50,9 +35,6 @@ function draw() {
     for(let i = 0; i < 10; i++){
         image(rock[0], Math.random, Math.random);
     }
-    
-    
-
     // Player movement
     if (movingRight) {
         xpos += speed;
@@ -60,10 +42,6 @@ function draw() {
     if (movingLeft) {
         xpos -= speed;
     }
-
-    //Makign the rocks fall
-    
-
 
 }
 //Player input
