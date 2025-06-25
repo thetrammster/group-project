@@ -4,7 +4,7 @@ let movingUp = false;
 let movingDown = false;
 
 let xpos = 350;
-let ypos = 555;
+let ypos = 770;
 let speed = 5;
 
 
