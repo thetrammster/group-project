@@ -8,3 +8,22 @@ canvas {
   display: block;
 }
 
+.centermove 
+{display:flex;
+  justify-content: center;
+}
+
+.Introduction
+{   
+width: 100px;
+border: 50px white;
+background-color: black;
+color: white;
+font-size: 15px;font-family: Arial;
+;padding: 25px;
+
+position:relative;
+left: 170px;
+top: -10px;
+}
+

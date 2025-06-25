@@ -30,12 +30,14 @@ function centerCanvas(){
     //sets the variables that get the midpoint of the page and set it to the coordinates of the canvas
     var x = (windowWidth - width) / 2;
     var y = (windowHeight - height) / 2;
-    centered.position(x,y);
+    y += 100; // Add vertical offset for heading
+    centered.position(x, y);
 }
+
 
 function setup() {
 //Assigns the creation of the cavas to a variable that can be used later for positioning
-centered = createCanvas(850,775);
+centered = createCanvas(850,750);
 //positions the canvas in the center
 centerCanvas();
 
