@@ -34,7 +34,7 @@ function centerCanvas(){
 }
 function setup() {
     
-    centered = createCanvas(800, 1000);
+    centered = createCanvas(800, 800);
     centerCanvas();
     
 
