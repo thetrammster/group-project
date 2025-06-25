@@ -8,22 +8,35 @@ canvas {
   display: block;
 }
 
-.centermove 
-{display:flex;
-  justify-content: center;
-}
+
+
 
 .Introduction
 {   
-width: 100px;
+width: 200px;
 border: 50px white;
 background-color: black;
 color: white;
-font-size: 15px;font-family: Arial;
+font-size: 15px;;
 ;padding: 25px;
-
 position:relative;
-left: 170px;
-top: -10px;
+left: 90px;
+top: 71.5px;
+font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
+
+.gradientbackground
+{
+  background-image: url('images/body.jpg');
+  background-repeat: no-repeat; 
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+
+
 
