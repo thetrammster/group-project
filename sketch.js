@@ -13,7 +13,7 @@ let rock =[];
 let rockYPos = 2;
 let bg;
 
-let centered;
+
 
 // Load assets
 function preload(){
@@ -27,21 +27,16 @@ function preload(){
 }
 
 function centerCanvas(){
-    //sets the variables that get the midpoint of the page and set it to the coordinates of the canvas
-    var x = (windowWidth - width) / 2;
-    var y = (windowHeight - height) / 2;
-    y += 100; // Add vertical offset for heading
-    centered.position(x, y);
+    var x = (windowWidth - width)/2;
+    var y = (windowHeight - height)/2;
+    y+=100;
+    centered.position(x,y);
 }
-
-
 function setup() {
-//Assigns the creation of the cavas to a variable that can be used later for positioning
-centered = createCanvas(850,750);
-//positions the canvas in the center
-centerCanvas();
-
-
+    
+    centered = createCanvas(800, 1000);
+    centerCanvas();
+    
 
 }
 
