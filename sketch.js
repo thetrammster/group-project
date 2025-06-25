@@ -1,29 +1,17 @@
 let movingRight = false;
 let movingLeft = false;
-let movingUp = false;
-let movingDown = false;
 
 let xpos = 350;
-let ypos = 555;
+let ypos = 770;
 let speed = 5;
 
-
 let player;
-let rock =[];
-let rockYPos = 2;
 let bg;
-
-
 
 // Load assets
 function preload(){
     player = loadImage("images/NewCart.png");
-    rock[0] = loadImage("images/Rock1.png");
-    //rocks[1] = loadImage("image/Rock2");
-    //rocks[2] = loadImage("image/Rock3");
-    //rocks[3] = loadImage("image/Rock4");
     bg = loadImage("images/Background.png"); 
-
 }
 
 function centerCanvas(){
@@ -36,8 +24,6 @@ function setup() {
     
     centered = createCanvas(800, 800);
     centerCanvas();
-    
-
 }
 
 function draw() {
@@ -50,9 +36,6 @@ function draw() {
     for(let i = 0; i < 10; i++){
         image(rock[0], Math.random, Math.random);
     }
-    
-    
-
     // Player movement
     if (movingRight) {
         xpos += speed;
@@ -60,28 +43,12 @@ function draw() {
     if (movingLeft) {
         xpos -= speed;
     }
-    if (movingUp) {
-        ypos -= speed;
-    }
-    if (movingDown) {
-        ypos += speed;
-    }
-
-    //Makign the rocks fall
-    
-
 
 }
 //Player input
 function keyPressed() {
-    if (key == 'w') {
-        movingUp = true;
-    }
     if (key == 'a') {
         movingLeft = true;
-    }
-    if (key == 's') {
-        movingDown = true;
     }
     if (key == 'd') {
         movingRight = true;
@@ -89,14 +56,8 @@ function keyPressed() {
 }
 
 function keyReleased() {
-    if (key == 'w') {
-        movingUp = false;
-    }
     if (key == 'a') {
         movingLeft = false;
-    }
-    if (key == 's') {
-        movingDown = false;
     }
     if (key == 'd') {
         movingRight = false;
