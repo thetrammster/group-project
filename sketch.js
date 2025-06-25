@@ -3,8 +3,8 @@ let movingLeft = false;
 let movingUp = false;
 let movingDown = false;
 
-let xpos = 300;
-let ypos = 300;
+let xpos = 350;
+let ypos = 555;
 let speed = 5;
 
 
@@ -50,7 +50,7 @@ function draw() {
   
   // draw character
     fill(0, 0, 255);
-    image(player, xpos, ypos, 100, 75);
+    image(player, xpos, ypos, 120, 85);
 
     for(let i = 0; i < 10; i++){
         image(rock[0], Math.random, Math.random);
