@@ -60,12 +60,6 @@ function draw() {
     if (movingLeft) {
         xpos -= speed;
     }
-    if (movingUp) {
-        ypos -= speed;
-    }
-    if (movingDown) {
-        ypos += speed;
-    }
 
     //Makign the rocks fall
     
@@ -74,14 +68,8 @@ function draw() {
 }
 //Player input
 function keyPressed() {
-    if (key == 'w') {
-        movingUp = true;
-    }
     if (key == 'a') {
         movingLeft = true;
-    }
-    if (key == 's') {
-        movingDown = true;
     }
     if (key == 'd') {
         movingRight = true;
@@ -89,14 +77,8 @@ function keyPressed() {
 }
 
 function keyReleased() {
-    if (key == 'w') {
-        movingUp = false;
-    }
     if (key == 'a') {
         movingLeft = false;
-    }
-    if (key == 's') {
-        movingDown = false;
     }
     if (key == 'd') {
         movingRight = false;
