@@ -15,9 +15,11 @@
     <!-- p5 dont touch -->
     <script src="libraries/p5.min.js"></script>
     <script src="libraries/p5.sound.min.js"></script>
+    <script src="libraries/p5.collide2d.min.js"></script>
   </head>
 
   <body class="gradientbackground">
+    
     <article class="Introduction">
       <script src="htmlstuff.js"></script>
       <h1>Rock Rush!</h1>
@@ -27,8 +29,11 @@
       <button id ="Back" onclick="Backbutton()">Back</button>
       <button id="Next" onclick="Nextbutton()">Next</button>
     </article>
+    <div id="scoreDisplay">Score: 0</div>
     <script src="sketch.js"></script>
     <script src="rock.js"></script>
+
+    
     
   </body>
 </html>

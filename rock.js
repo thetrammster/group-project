@@ -1,14 +1,16 @@
-class Rock{
-    constructor(speed, x, y) {
-        this.speed = speed;
+class Rock {
+    constructor(x, y) {
         this.x = x;
         this.y = y;
-        
-
-        let rockSprite = loadImage("images/Rock1.png");
-        image(rockSprite);
-        
+        this.w = 50;
+        this.h = 50;
     }
-    
-    
+
+    update() {
+        this.y += rockspd;
+    }
+
+    display() {
+        image(rock, this.x, this.y, this.w, this.h);
+    }
 }
