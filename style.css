@@ -37,6 +37,19 @@ font-family: "Press Start 2P", system-ui;
 }
 
 
-
+.scoreslog
+{
+  width: 200px;
+border: 50px white;
+background-color: black;
+color: white;
+font-size: 15px;;
+;padding: 43px;
+position:relative;
+left: 1190px;
+top: -675px;
+font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+}
 
 
