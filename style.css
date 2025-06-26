@@ -1,12 +1,14 @@
 html, body {
   margin: 0;
   padding: 0;
-  background-image: "images/Backround.png";
+    background-image: "images/Backround.png";
+
 }
 
 canvas {
   display: block;
 }
+
 
 
 
@@ -51,5 +53,4 @@ top: -555px;
 font-family: "Press Start 2P", system-ui;
   font-weight: 400;
 }
-
 
